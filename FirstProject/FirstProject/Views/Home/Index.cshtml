@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    div {
+        color:orange;
+
+    }
+    footer {
+        color:blue;
+    }
+    #MainProducts
+    {
+        color: purple;
+    }
+    article {
+        color: green;
+    }
+    body {
+        color: red;
+        background-color: white;
+    }
+    .CoolText {
+        color:brown;
+    }
+
+</style>
+
+
+
+
+<main>
+    <span class="CoolText">Please buy my products</span></br>
+    <p class="CoolText">
+        Hi this is my shopping cart, my products
+        are awesome, please buy them or else!
+    </p>
+    <!--To do: I need to put all my products here-->
+
+    <section id="MainProducts">
+        <label>Filter by: </label>
+        <select>
+            <option label="Name">Product Name</option>
+            <option>Price</option>
+            <option>Description</option>
+        </select><br />
+        <input type="radio" name="Order" id="OrderByPrice"/>
+        <label for="OrderByPrice">Order by Price</label>
+        <input type="radio" name="Order" id="OrderByName" />
+        <label for="OrderByName">Order by Name</label>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pokemon actions figure</td>
+                    <td>Pikachu from Pokemon</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Digimon actions figure</td>
+                    <td>Wargraymon from Digimon</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Alucan actions figure</td>
+                    <td>Alucard from Alucard</td>
+                    <td>$50</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><button>Next Page</button></td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </section>
+
+</main>
+
+
+
